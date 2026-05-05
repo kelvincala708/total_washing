@@ -759,7 +759,123 @@ ul { list-style: none; }
 .gallery-thumb:hover .gallery-thumb__label { opacity: 1; }
 
 /* ============================================================
-   9. CTA
+   9. WARMUP / CONVERSION
+   ============================================================ */
+.warmup {
+  padding: var(--pad) 0;
+  background: #F4F4F4;
+  text-align: center;
+}
+
+.warmup__header {
+  max-width: 760px;
+  margin: 0 auto 56px;
+}
+
+.warmup__headline {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 900;
+  color: #333333;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.warmup__subheadline {
+  font-size: 1rem;
+  color: #666666;
+  line-height: 1.72;
+}
+
+.warmup__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 56px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.warmup__card {
+  background: white;
+  padding: 36px 28px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all var(--ease);
+  border: 1px solid rgba(0, 128, 128, 0.08);
+}
+
+.warmup__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-color: #008080;
+}
+
+.warmup__card-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.warmup__card-text {
+  font-size: 0.95rem;
+  color: #666666;
+  line-height: 1.68;
+}
+
+.warmup__cta {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 48px 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 128, 128, 0.08);
+}
+
+.warmup__cta-text {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #333333;
+  margin-bottom: 28px;
+  letter-spacing: -0.01em;
+}
+
+.warmup__cta-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-warmup-secondary {
+  background: white;
+  color: #333333;
+  border: 2px solid #008080;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all var(--ease);
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.btn-warmup-secondary:hover {
+  background: #008080;
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* ============================================================
+   10. CTA
    ============================================================ */
 .cta {
   padding: var(--pad) 0;
@@ -811,7 +927,7 @@ ul { list-style: none; }
 }
 
 /* ============================================================
-   10. NEWSLETTER
+   11. NEWSLETTER
    ============================================================ */
 .newsletter {
   padding: 60px 0;
@@ -858,7 +974,7 @@ ul { list-style: none; }
 .newsletter__form input::placeholder { color: #b0b8c0; }
 
 /* ============================================================
-   11. FOOTER
+   12. FOOTER
    ============================================================ */
 .footer {
   background: var(--charcoal);
